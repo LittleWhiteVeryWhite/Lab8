@@ -1,6 +1,7 @@
 package com.example.lab8;
 
 import android.content.Context;
+import android.telephony.CellSignalStrength;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +55,7 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public boolean hasCity(City city){
-        return false;
+        return cities.contains(city);
     }
 
     public void deleteCity(City city){
